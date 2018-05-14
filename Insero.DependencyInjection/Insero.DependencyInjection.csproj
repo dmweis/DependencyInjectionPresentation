@@ -87,6 +87,7 @@
     <Compile Include="RandomUsers\Data\Picture.cs" />
     <Compile Include="RandomUsers\Data\RandomUserResult.cs" />
     <Compile Include="RandomUsers\Data\Person.cs" />
+    <Compile Include="RandomUsers\HardcodedUserProvider.cs" />
     <Compile Include="RandomUsers\IRandomUserProvider.cs" />
     <Compile Include="RandomUsers\RandomUserWebProvider.cs" />
     <Compile Include="RandomUsers\UserDisplay.xaml.cs">
