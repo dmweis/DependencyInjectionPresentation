@@ -8,12 +8,12 @@
         xmlns:randomCat="clr-namespace:Insero.DependencyInjection.RandomCat"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <randomUsers:UserDisplay/>
-        <randomCat:RandomCatDisplay Grid.Row="1"/>
-    </Grid>
+    <TabControl>
+        <TabItem Header="Random Users">
+            <randomUsers:UserDisplay/>
+        </TabItem>
+        <TabItem Header="Random CATS!!!">
+            <randomCat:RandomCatDisplay/>
+        </TabItem>
+    </TabControl>
 </Window>
