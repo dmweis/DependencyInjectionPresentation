@@ -55,7 +55,9 @@ namespace Insero.DependencyInjection.RandomUsers.Tests
         {
             // Arrange
             var userProviderMock = new Mock<IRandomUserProvider>();
-            userProviderMock.Setup(provider => provider.GetUsers(5)).Returns(_users);
+            userProviderMock
+                .Setup(provider => provider.GetUsers(It.IsAny<int>()))
+                .Returns((int number) => _users.Take(number));
             // Act
             var vm = new UserDisplayViewModel(userProviderMock.Object);
             // Assert
@@ -67,7 +69,9 @@ namespace Insero.DependencyInjection.RandomUsers.Tests
         {
             // Arrange
             var userProviderMock = new Mock<IRandomUserProvider>();
-            userProviderMock.Setup(provider => provider.GetUsers(5)).Returns(_users);
+            userProviderMock
+                .Setup(provider => provider.GetUsers(It.IsAny<int>()))
+                .Returns((int number) => _users.Take(number));
             // Act
             var vm = new UserDisplayViewModel(userProviderMock.Object); // 1 on creation
             // 4 times for each command call
@@ -76,7 +80,7 @@ namespace Insero.DependencyInjection.RandomUsers.Tests
             vm.ReloadUsersCommand.Execute(null);
             vm.ReloadUsersCommand.Execute(null);
             // Assert
-            userProviderMock.Verify(mock => mock.GetUsers(5), Times.Exactly(5));
+            userProviderMock.Verify(mock => mock.GetUsers(It.IsAny<int>()), Times.Exactly(5));
         }
     }
 }
