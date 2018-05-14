@@ -5,7 +5,7 @@ using Insero.DependencyInjection.RandomUsers.Data;
 
 namespace Insero.DependencyInjection.RandomUsers
 {
-    class UserDisplayViewModel : ViewModelBase
+    public class UserDisplayViewModel : ViewModelBase
     {
         private readonly IRandomUserProvider _userProvider;
 

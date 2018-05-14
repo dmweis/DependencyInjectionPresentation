@@ -3,7 +3,7 @@ using Insero.DependencyInjection.RandomUsers.Data;
 
 namespace Insero.DependencyInjection.RandomUsers
 {
-    class UserViewModel
+    public class UserViewModel
     {
         public string FirstName { get; }
         public string LastName { get; }

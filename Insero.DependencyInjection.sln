@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insero.DependencyInjection"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProject", "WebProject\WebProject.csproj", "{C558434F-3ED4-4844-B9AB-DDDDD34B06C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insero.DependencyInjectionTests", "Insero.DependencyInjectionTests\Insero.DependencyInjectionTests.csproj", "{4060C82B-AD2F-4941-B97A-7B1A0F271954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C558434F-3ED4-4844-B9AB-DDDDD34B06C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C558434F-3ED4-4844-B9AB-DDDDD34B06C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C558434F-3ED4-4844-B9AB-DDDDD34B06C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4060C82B-AD2F-4941-B97A-7B1A0F271954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4060C82B-AD2F-4941-B97A-7B1A0F271954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4060C82B-AD2F-4941-B97A-7B1A0F271954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4060C82B-AD2F-4941-B97A-7B1A0F271954}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
